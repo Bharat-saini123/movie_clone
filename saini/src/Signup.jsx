@@ -25,7 +25,7 @@ const sendDataSignup=async()=>{
     const {firstname,lastname,email,password,phone,confirmpassword}=user;
     console.log(firstname,lastname,email,phone,password,confirmpassword)
 try{
-    const response=await fetch("http://localhost:5000/signup",{
+    const response=await fetch("https://sainisahab-movie-backend.onrender.com/signup",{
         method:"POST",
         headers:{
             "Content-Type":"application/json"

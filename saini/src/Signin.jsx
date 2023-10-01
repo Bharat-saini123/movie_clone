@@ -20,7 +20,7 @@ const Signin = () => {
         const sendDataSignin=async()=>{
 const {email,password}=user;
 try{
-const response=await fetch("http://localhost:5000/signin",{
+const response=await fetch("https://sainisahab-movie-backend.onrender.com/signin",{
     method:"POST",
     headers:{
         "Content-Type":"application/json"
@@ -46,7 +46,7 @@ if(response.status===408){
     })
 }
 if(response.status===200){
-    toast.success("successful register",{
+    toast.success("successful login",{
         autoClose:2000,
         position: "top-left",
     }),
